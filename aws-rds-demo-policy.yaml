@@ -1,0 +1,9 @@
+policies:
+  - name: aws-rds-demo-policy
+    resource: aws.rds
+    filters:
+      - "tag:createdBy": absent
+    # actions:
+    #   - type: tag
+    #     key: createdBy
+    #     value: Sam
